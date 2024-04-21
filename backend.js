@@ -19,7 +19,7 @@ console.log(apiKey);
 const PORT = 3000;
 
 // Define an endpoint to handle incoming requests from the React app
-app.get("/api/clash-of-clans", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     // Make an API request to the Clash of Clans API using Axios
     const response = await axios.get(BASE_URL, {
